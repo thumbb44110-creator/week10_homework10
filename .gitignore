@@ -1,0 +1,40 @@
+# Week 10 Homework - Git Ignore File
+# Exclude all files except homework materials
+*
+!.gitignore
+!Week10_ARIA_v70_*.ipynb
+!.env
+!output/
+!README.md
+!Homework-Week10.md
+
+# Note: .env is included for development but should never be committed
+# In practice, add .env to global gitignore or use .env.example
+
+# Exclude output directory contents but keep the directory
+output/*
+!output/.gitkeep
+
+# Common Python excludes
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
